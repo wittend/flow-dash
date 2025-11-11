@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+//
 export function initToolbar(container) {
   const btn = (id, label) => `<button class="button" id="${id}">${label}</button>`;
   container.innerHTML = [

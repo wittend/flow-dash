@@ -1,0 +1,38 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# Doxygen configuration for flow-dash (TypeScript/JavaScript)
+# Generates HTML API docs into Sphinx static path so it can be served on RTD.
+
+# Project
+PROJECT_NAME           = "flow-dash"
+PROJECT_NUMBER         = "1.0"
+OUTPUT_DIRECTORY       = _static/doxygen
+CREATE_SUBDIRS         = NO
+
+# Build
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_XML           = NO
+QUIET                  = YES
+WARN_IF_UNDOCUMENTED   = NO
+WARN_IF_DOC_ERROR      = YES
+
+# Input
+INPUT                  = ../lib ../public ../main.ts
+FILE_PATTERNS          = *.ts *.js
+RECURSIVE              = YES
+EXCLUDE_PATTERNS       = *_test.ts *_test.js *.min.js *_obj.json
+
+# Parsing behavior suitable for JS/TS with JSDoc/Doxygen-style comments
+OPTIMIZE_OUTPUT_JAVA   = YES
+JAVADOC_AUTOBRIEF      = YES
+MULTILINE_CPP_IS_BRIEF = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+
+# Source browsing
+SOURCE_BROWSER         = NO
+INLINE_SOURCES         = NO
+REFERENCED_BY_RELATION = NO
+REFERENCES_RELATION    = NO

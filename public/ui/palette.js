@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+//
+// Doxygen: Palette panel for adding nodes to the canvas via click or drag-and-drop.
 export async function initPalette(container){
   container.innerHTML = '<div>Loading palette...</div>';
   const res = await fetch('/api/palette');

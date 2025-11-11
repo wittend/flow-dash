@@ -1,3 +1,9 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+//
+// Doxygen: Canvas renderer and interactions for the flow-graph editor.
+// - Renders nodes and wires on an HTML5 canvas and companion SVG for arrowheads.
+// - Handles drag, drop from palette, and link creation between connectors.
+//
 import { subscribe, addNode, getState, moveNode, startLink, updateLinkPreview, cancelLink, finishLink } from './store.js';
 
 export function initCanvas(canvasEl, svgEl){

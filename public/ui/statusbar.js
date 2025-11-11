@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+//
 let statusEl;
 let dirty = false;
 export function initStatusbar(container){

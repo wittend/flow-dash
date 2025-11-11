@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
 # Minimal Makefile for Sphinx documentation
 
 # You can set these variables from the command line.

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+//
 // Simple in-memory client-side store for project graph
 // Schema mirrors server's lib/graph.ts shape (JS version)
 

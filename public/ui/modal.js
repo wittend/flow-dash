@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+//
 // Minimal modal helper
 // Usage: showModal({ title, content, actions: [{label, onClick, kind}] })
 

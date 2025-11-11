@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
 # Configuration file for the Sphinx documentation builder.
 # Read the Docs style docs using the Furo theme.
 

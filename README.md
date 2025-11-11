@@ -11,6 +11,8 @@ A minimal, Deno-based flow-graph editor and runtime scaffold inspired by GNU Rad
 
 - Runtime: [Deno](https://deno.com/runtime) 2.x
 - CI: [![Deno CI](https://github.com/your-org-or-user/flow-dash/actions/workflows/deno.yml/badge.svg)](.github/workflows/deno.yml)
+- Docs: [![Documentation Status](https://readthedocs.org/projects/flow-dash/badge/?version=latest)](https://flow-dash.readthedocs.io/en/latest/?badge=latest)
+- License: [![License: GPL v3](https://img.shields.io/badge/License-GPLv3+-blue.svg)](LICENSE)
 
 
 ## Features
@@ -164,8 +166,12 @@ See `docs/deploy.rst` for details.
 
 ## Documentation
 
-This repo includes Sphinx docs (RST) and a prebuilt HTML copy under `docs/_build/html/`.
-- Open `docs/_build/html/index.html` in your browser for an overview, getting started, schema, storage, and deploy guides.
+- Read the Docs (latest): https://flow-dash.readthedocs.io/en/latest/
+- API reference (Doxygen) on RTD: https://flow-dash.readthedocs.io/en/latest/_static/doxygen/index.html
+- Build locally:
+  - Sphinx HTML: `pip install -r docs/requirements.txt && sphinx-build -b html docs docs/_build/html`
+  - Doxygen API: `doxygen docs/Doxyfile` then open `docs/_static/doxygen/html/index.html`
+- A prebuilt local copy may also exist under `docs/_build/html/index.html`.
 
 
 ## Schema and Palette
