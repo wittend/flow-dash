@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Python" name="Python facet">
+      <configuration sdkName="Python 3.12 (flow-dash)" />
+    </facet>
+  </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
@@ -8,8 +13,10 @@
       <excludeFolder url="file://$MODULE_DIR$/.venv/include" />
       <excludeFolder url="file://$MODULE_DIR$/.venv/lib/python3.12/site-packages/furo/theme/furo/static/scripts" />
       <excludeFolder url="file://$MODULE_DIR$/.venv/lib/python3.12/site-packages/furo/theme/furo/static/styles" />
+      <excludeFolder url="file://$MODULE_DIR$/.venv" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Python 3.12 (flow-dash) interpreter library" level="application" />
   </component>
 </module>
