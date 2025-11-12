@@ -1,0 +1,183 @@
+{
+  "id": "Demo-001",
+  "name": null,
+  "version": 1,
+  "nodes": [
+    {
+      "id": "n_72769a55",
+      "guid": "sample-generator",
+      "name": "Sample Generator",
+      "x": 189,
+      "y": 477,
+      "connectors": [
+        {
+          "id": "out",
+          "kind": "source",
+          "name": "out"
+        }
+      ]
+    },
+    {
+      "id": "n_f0b7038c",
+      "guid": "sample-generator",
+      "name": "Sample Generator",
+      "x": 185,
+      "y": 133,
+      "connectors": [
+        {
+          "id": "out",
+          "kind": "source",
+          "name": "out"
+        }
+      ]
+    },
+    {
+      "id": "n_de05cfc9",
+      "guid": "sample-filter",
+      "name": "Sample Filter",
+      "x": 532,
+      "y": 265,
+      "connectors": [
+        {
+          "id": "out",
+          "kind": "source",
+          "name": "out"
+        },
+        {
+          "id": "in",
+          "kind": "sink",
+          "name": "in"
+        }
+      ]
+    },
+    {
+      "id": "n_808b5e99",
+      "guid": "sample-sink",
+      "name": "Sample Sink",
+      "x": 849,
+      "y": 271,
+      "connectors": [
+        {
+          "id": "in",
+          "kind": "sink",
+          "name": "in"
+        }
+      ]
+    },
+    {
+      "id": "n_a588eb76",
+      "guid": "sample-generator",
+      "name": "Sample Generator",
+      "x": 239,
+      "y": 654,
+      "connectors": [
+        {
+          "id": "out",
+          "kind": "source",
+          "name": "out"
+        }
+      ]
+    },
+    {
+      "id": "n_53a57aee",
+      "guid": "sample-filter",
+      "name": "Sample Filter",
+      "x": 837,
+      "y": 482,
+      "connectors": [
+        {
+          "id": "out",
+          "kind": "source",
+          "name": "out"
+        },
+        {
+          "id": "in",
+          "kind": "sink",
+          "name": "in"
+        }
+      ]
+    },
+    {
+      "id": "n_d84d0abf",
+      "guid": "sample-sink",
+      "name": "Sample Sink",
+      "x": 1110,
+      "y": 333,
+      "connectors": [
+        {
+          "id": "in",
+          "kind": "sink",
+          "name": "in"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_351970a1",
+      "from": {
+        "nodeId": "n_f0b7038c",
+        "connectorId": "out"
+      },
+      "to": {
+        "nodeId": "n_de05cfc9",
+        "connectorId": "in"
+      }
+    },
+    {
+      "id": "e_5d99fdcd",
+      "from": {
+        "nodeId": "n_72769a55",
+        "connectorId": "out"
+      },
+      "to": {
+        "nodeId": "n_de05cfc9",
+        "connectorId": "in"
+      }
+    },
+    {
+      "id": "e_dd2a463d",
+      "from": {
+        "nodeId": "n_de05cfc9",
+        "connectorId": "out"
+      },
+      "to": {
+        "nodeId": "n_808b5e99",
+        "connectorId": "in"
+      }
+    },
+    {
+      "id": "e_1d6f8dd0",
+      "from": {
+        "nodeId": "n_a588eb76",
+        "connectorId": "out"
+      },
+      "to": {
+        "nodeId": "n_53a57aee",
+        "connectorId": "in"
+      }
+    },
+    {
+      "id": "e_5f0b7a29",
+      "from": {
+        "nodeId": "n_53a57aee",
+        "connectorId": "out"
+      },
+      "to": {
+        "nodeId": "n_d84d0abf",
+        "connectorId": "in"
+      }
+    },
+    {
+      "id": "e_1e5e647e",
+      "from": {
+        "nodeId": "n_de05cfc9",
+        "connectorId": "out"
+      },
+      "to": {
+        "nodeId": "n_53a57aee",
+        "connectorId": "in"
+      }
+    }
+  ]
+}
